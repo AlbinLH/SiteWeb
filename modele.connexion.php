@@ -7,7 +7,7 @@
 	<body>
 <?php
 $compte = $_POST['login'];
-$mdp = $_POST['pass'];
+$mdp = $_POST['pass']; //a sÃ©curiser
 $test= 0;
 
 try
@@ -16,7 +16,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=users;charset=utf8', 'root', 'root')
 }
 catch(Exception $e)
 {
-    // En cas d'erreur, on affiche un message et on arrête tout
+    // En cas d'erreur, on affiche un message et on arrÃªte tout
     die('Erreur : '.$e->getMessage());
 }
 
@@ -27,7 +27,7 @@ $reponse = $bdd->query('SELECT * FROM verifiedusers');
 while ($donnees = $reponse->fetch())
 {   
 if ($mdp==$donnees['Pass'] AND $compte==$donnees['Login']) {
-    echo "Connecté";
+    echo "ConnectÃ©";
     $test=1;
     $lien = "Menu.php";
     break;
@@ -36,10 +36,10 @@ if ($mdp==$donnees['Pass'] AND $compte==$donnees['Login']) {
 
 if ($test==0) {
     $lien = "vues.connexion.php";
-    echo "Identifiants erronés";
+    echo "Identifiants erronÃ©s";
 }
 
-$reponse->closeCursor(); // Termine le traitement de la requête
+$reponse->closeCursor(); // Termine le traitement de la requÃªte
 
 ?>
 </body>
