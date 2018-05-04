@@ -13,7 +13,7 @@ catch(Exception $e)
 $skurt="Salut";
 $reponse = $bdd->query(''); //Prends les noms des pièces associée à l'utilisateur. A sécuriser et a faire.
 ?>
-<form method="post" action="modele.ajoutpièces.php">
+<form method="post" action="modele.ajoutcapteurs.php">
 	<p>
 	
 		<select name="pieceselectionnée">
