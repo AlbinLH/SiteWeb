@@ -23,7 +23,7 @@ catch(Exception $e) {
 }
 if (isset($_POST['mail']) AND isset($_POST['gender']) AND isset($_POST['numbernameadress']) AND isset($_POST['postalcode']) AND isset($_POST['city']) AND isset($_POST['password']) AND isset($_POST['passwordcheck']) AND isset($_POST['taille'])) {
     if ($password==$passwordcheck) {
-        $reponse = $bdd->query(''); //Ajouter les champs à la base de données
+        $reponse = $bdd->query(''); //Ajouter les champs à la base de données //Securiser contre les injections sql
     } 
     else {
         echo "Mots de passe non identique"; ?>

@@ -2,7 +2,6 @@
 <html lang="fr">
 	<head>
 		<title>Connexion aux services</title>
-		<meta http-equiv="refresh" content="1; URL=redirection.php">
 	</head>
 	<body>
 <?php
@@ -16,30 +15,30 @@ $bdd = new PDO('mysql:host=localhost;dbname=users;charset=utf8', 'root', 'root')
 }
 catch(Exception $e)
 {
-    // En cas d'erreur, on affiche un message et on arrête tout
+    // En cas d'erreur, on affiche un message et on arrète tout
     die('Erreur : '.$e->getMessage());
 }
 
 
-$reponse = $bdd->query('SELECT * FROM verifiedusers');
+$reponse = $bdd->query('SELECT * FROM verifiedusers'); //à sécuriser
 
 
 while ($donnees = $reponse->fetch())
 {   
 if ($mdp==$donnees['Pass'] AND $compte==$donnees['Login']) {
-    echo "Connecté";
     $test=1;
-    $lien = "Menu.php";
     break;
     }
 }
 
 if ($test==0) {
-    $lien = "vues.connexion.php";
-    echo "Identifiants erronés";
+    echo "Identifiants erronés <br/>";
+    include("vues.connexion.php");
+} else {
+    include("vues.Menu.php");
 }
+$reponse->closeCursor(); // Termine le traitement de la requ�te
 
-$reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>
 </body>

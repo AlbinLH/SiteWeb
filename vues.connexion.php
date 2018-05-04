@@ -1,5 +1,5 @@
 <!DOCTYPE php>
-<html lang="fr">
+<html lang="fr" style="vues.connexion.css">
    <head>
       <title>Connexion aux services</title>
    </head>
