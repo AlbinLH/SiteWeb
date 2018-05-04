@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Lares</title>
-		<link rel="stylesheet" href="capteurs.css"/>
+		<link rel="stylesheet" href="vues.ajout.css"/>
 	</head>
 
 	<body>
