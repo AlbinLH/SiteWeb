@@ -1,0 +1,37 @@
+body
+{
+	background-image:url("login.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+h2 
+{
+	font-size: 28px;
+	font-color: black;
+}
+p {
+	font-size: 22px;
+	font-color: #040405;
+}
+.blocktext {
+	text-align: center;
+}
+input {
+	width: 20%;
+	border: none;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 20px;
+	text-size: 22px;
+}
+button {
+	border-radius: 10px;
+	border: none;
+	color: #040405;
+	padding: 12px 26px;
+	text-decoration: none;
+	margin: 2px 1px;
+	cursor: pointer;	
+}
