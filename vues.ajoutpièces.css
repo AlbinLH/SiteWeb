@@ -8,12 +8,17 @@ input
 .taille_du_texte
 {
 	font-size: 2em;
-	/*padding: 3%;*/
-	
 }
 img
 {
 	padding: 3%;
+	height: 25%;
+	width: 25%;
+	background-color: #3B4970;
+	border: 2px solid;
+	border-radius: 10px;
+	margin: auto;
+	display: inline-block;
 }
 #conteneur
 {
@@ -21,4 +26,58 @@ img
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: start;
+	
+}
+#conteneur_principal
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  	grid-gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
+}
+#conteneur2
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 1;
+	grid-row: 1;
+}
+#conteneur3
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 2;
+	grid-row: 1;
+}
+#conteneur4
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 3;
+	grid-row: 1;
+}
+#conteneur5
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 4;
+	grid-row: 1;
+}
+#conteneur6
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 2;
+	grid-row: 2;
+}
+#conteneur7
+{
+	display: flex;
+	flex-direction: column;
+	grid-column: 3;
+	grid-row: 2;
+}
+.position_du_texte
+{
+	margin: auto;
 }
