@@ -1,23 +1,19 @@
 <!DOCTYPE php>
-<html lang="fr" style="vues.connexion.css">
+<html lang="fr">
    <head>
+   		<link rel="stylesheet" href="vues.connexion.css">
       <title>Connexion aux services</title>
    </head>
    <body>
-      <h2>Connexion au site</h2>
+   		<p class="blocktext"><img id="image" src ="LARES.png" alt="logoLARES" /></p>
+      <h2 class="blocktext">Connexion aux services LARES</h2>
       <form action="modele.connexion.php" method="post">
-         <table>
-            <tr>
-               <td><label for="login"><strong>Nom de compte</strong></label></td>
-               <td><input type="text" name="login" id="login"/></td>
-            </tr>
-            <tr>
-               <td><label for="pass"><strong>Mot de passe</strong></label></td>
-               <td><input type="password" name="pass" id="pass"/></td>
-            </tr>
-         </table>
-         <input type="submit" name="connexion" value="Se connecter"/>
+         <p class="blocktext"><input type="text" placeholder="E-mail" name="login" id="login"/></p>
+         <p class="blocktext"><input type="password" placeholder="Mot de passe" name="pass" id="pass"/></p>
+         <p class="blocktext"><button type="submit" name="connexion" value="Se connecter"/>Valider</button></p>
       </form>
-      <p><a href="vues.inscription1.php">Inscrivez-vous au service</a></p>
+      <form action="vues.inscription1.php">
+      	</br><p class="blocktext" id="inscription"><button type="submit" name="submit">Pas encore inscrit ? S'inscrire ici</button></p>
+      </form>
    </body>
 </html>
