@@ -5,7 +5,7 @@
 	</head>
 	<body>
 <?php
-$mail = $_POST['mail'];
+$mail = $_POST['email'];
 $gender = $_POST['gender'];
 $numbernameadress = $_POST['numbernameadress'];
 $postalcode = $_POST['postalcode'];
