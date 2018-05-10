@@ -19,6 +19,14 @@
 
     <header>
         <h1><?php echo $title; ?></h1>
+        <ul class="menu">
+            <li class="logo"><img src=LOGO.png alt="logo"></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Mon profil</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Deconnection</a></li>
+        </ul>
     </header>
-    
+</body>
+</html>
     
