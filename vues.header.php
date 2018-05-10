@@ -26,7 +26,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Mon profil</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Deconnection</a></li>
+            <li><a href="#">Déconnexion</a></li>
         </ul>
     </header>
 </body>
