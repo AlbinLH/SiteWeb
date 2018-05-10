@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Admin</title>
+        <link rel="stylesheet" href="monStyle.css" />
+    </head>
+
+ 	<body>
+     	<h1 class="titre_pers">Espace personnel </h1>
+        <div class="conteneur">
+        <div><input type="button" value="Changer de mot de passe" class="boutons"></div>
+       <div> <input type="button" value="Changer adresse mail" class="boutons"></div>
+       <div> <input type="button" value="Liste utilisateurs bannis" class="boutons"></div>
+        </div>
+        <h1 class="titre_user">Espace utilisateur </h1>
+        <p>
+        <form method="post" action="traitement.php"> <!-- Attention à traitement -->
+            <label for="pays">Veuillez choisir parmi la liste des utilisateurs gérés suivants : </label>
+                <select name="pays" id="pays">
+                       <option value="france">France</option>
+                       <option value="espagne">Espagne</option>
+                       <option value="italie">Italie</option>
+                       <option value="royaume-uni">Royaume-Uni</option>
+                       <option value="canada">Canada</option>
+                       <option value="etats-unis">États-Unis</option>
+                       <option value="chine">Chine</option>
+                       <option value="japon">Japon</option>
+                </select>
+        </p>
+        </form>
+
+        Recherche spécifique : <br>
+        <table>
+            <tr>
+                <td>Identifiant</td>
+                <td> : </td>
+                <td> <input type="search" class="recherche"> </td>
+                <td><input type="button" value="Rechercher" class="boutons2"></td>
+            </tr>
+            <tr>
+                <td>Adresse</td>
+                <td> : </td>
+                <td><input type="search" class="recherche"> </td>
+                <td><input type="button" value="Rechercher" class="boutons2"></td>
+            </tr>
+            <tr>
+                <td>Nom</td>
+                <td> : </td>
+                <td><input type="search" class="recherche"></td>
+                <td><input type="button" value="Rechercher" class="boutons2"></td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td> : </td>
+                <td><input type="search" class="recherche"></td>
+                <td><input type="button" value="Rechercher" class="boutons2"></td>
+            </tr>
+        </table>
+ 	</body>
+</html>
