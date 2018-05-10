@@ -8,6 +8,8 @@
 <html>
 <head>
     <title><?php echo $title; ?></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="vues.header.css"/>
     
     <style>
         h1 {
