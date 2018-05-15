@@ -39,12 +39,6 @@ h1
 	
 }
 
-
-header, footer
-{
-	background-color: #3B4970
-}
-
 #legendeDonnees, #legendeLogement, #legendeStat, #legendeCapteurs
 {
    font-family: Nevis,Impact, "Arial Black", Arial, Verdana, sans-serif;
@@ -59,4 +53,3 @@ header, footer
 	height: 100px;
 	
 }
-

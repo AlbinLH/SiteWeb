@@ -1,8 +1,6 @@
-
-
 header {
     width:100%; 
-    height:500px;   
+    height:46px;   
 }
 
 /*
@@ -54,14 +52,3 @@ Barre de navigation
 .menu li a:hover {
     background-color: #03224C;
 }
-
-
-
-
-
-
-
-
-
-
-

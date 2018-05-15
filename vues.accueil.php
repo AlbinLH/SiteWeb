@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +12,7 @@
     <body>
     	<header>
     		<nav>
-    			<?php include(pageHeader.php); ?>
+    			<?php include('vues.header.php'); ?>
 
             </nav>
  
@@ -21,7 +24,7 @@
         <section>
         	<div id="conteneur0">
         	<h1> Accueil du compte </h1>
-        	<p>Bienvenue madame/monsieur <?php echo "... ";?>!</p>
+        	<p>Bienvenue  <?php echo $_SESSION['prenom']; echo " ";  echo $_SESSION['nom'];?>!</p>
         	</div>
 
         	
@@ -42,8 +45,10 @@
         			</div>
         			
         			<div id="conteneur5">
+        			<form action="vues.ajout.php">
         			<input id="boutonCapteurs" type="image" src="images site APP\capteur.jpg" value="Capteurs"id="fig5"/>
         			<p id="legendeCapteurs">Capteurs</p>
+        			</form>
         			
         	</div>
         			

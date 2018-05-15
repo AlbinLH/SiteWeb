@@ -1,0 +1,53 @@
+body
+{
+	background-image:url("login.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+}
+h1 {
+	text-align: center;
+}
+.inputclassique {
+	width: 250px;
+	border: none;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 20px;
+	text-size: 22px;
+	margin-bottom: 25px;
+}
+.conteneur {
+	margin: auto;
+	width: 40%;
+	border: none;
+	display: flex;
+	flex-direction: line;
+	justify-content: space-around;
+}
+td {
+	text-align: left;
+}
+.inputradio {
+	border-radius: 1px;
+	text-size: 22px;
+	border: none;
+}
+table {
+	background-color: white;
+	border-radius: 20px;
+	width: 240px;
+	margin-bottom: 25px;
+}
+.textinput {
+	color: grey;
+}
+button {
+	border-radius: 10px;
+	border: none;
+	color: black;
+	padding: 12px 26px;
+	text-decoration: none;
+	margin: 2px 1px;
+	cursor: pointer;
+}

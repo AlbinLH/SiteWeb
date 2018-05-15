@@ -7,9 +7,20 @@
 	</head>
 
 	<body>
+	<?php include('vues.header.php');?>
+	
 		<div id="conteneur">
-			<div class="element"><a href="vues.ajoutpièces.php">Définir une nouvelle pièce</a></div></br>
-			<div class="element"><a href="vues.ajoutcapteurs.php">Ajouter des capteurs à une pièce existante</a></div>
+			<div class="element">
+				<form action="vues.ajoutpieces.php">
+					<button class="bouton" ><label class="textinput">Définir une nouvelle pièce</label></button>
+				</form>
+			</div>
+			</br>
+			<div class="element">
+				<form action="vues.ajoutcapteurs.php">
+					<button class="bouton" href="vues.connexion.php"><label class="textinput">Ajouter des capteurs à une pièce existante</label></button>
+				</form>
+			</div>
 		</div>
 		
 	</body>

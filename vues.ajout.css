@@ -2,13 +2,11 @@
 
 .element
 {
-	background-color: #3B4970;
-	font-family: sans-serif;
-	font-size: 3.2em;
-	color: white;
-	border-radius: 10px;
-	padding: 10px;
+	display: flex;
+	justify-content: center;
+ 
 }
+
 #conteneur
 {
 	display: flex;
@@ -16,8 +14,18 @@
 	justify-content: center;
 	align-items: center;
 }
-a
-{
-	text-decoration: none;
+.bouton{
+	
+	border: none;
+	border-radius: 20px;
+	background-color: #3B4970;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 20px;
+	margin-top: 100px;
+	cursor: pointer;
+	
+}
+.textinput {
 	color: white;
 }

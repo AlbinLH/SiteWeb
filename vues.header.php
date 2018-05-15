@@ -1,9 +1,3 @@
-<?php
-/**
-* Vue : entête HTML
-*/
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,12 +17,11 @@
         <h1><?php echo $title; ?></h1>
         <ul class="menu">
             <li class="logo"><img src=LOGO.png alt="logo"></li>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="vues.accueil.php">Accueil</a></li>
             <li><a href="#">Mon profil</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Déconnexion</a></li>
+            <li><a href="vues.contact.php">Contact</a></li>
+            <li><a href="vues.connexion.php">Déconnexion</a></li>
         </ul>
     </header>
 </body>
 </html>
-    
