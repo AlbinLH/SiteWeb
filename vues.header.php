@@ -15,13 +15,13 @@
 
     <header>
         <h1><?php echo $title; ?></h1>
-        <ul class="menu">
-            <li class="logo"><img src=LOGO.png alt="logo"></li>
-            <li><a href="vues.accueil.php">Accueil</a></li>
-            <li><a href="#">Mon profil</a></li>
-            <li><a href="vues.contact.php">Contact</a></li>
-            <li><a href="vues.connexion.php">Déconnexion</a></li>
-        </ul>
+        <div class="menu">
+            <div class="logo"><img src=LOGO.png alt="logo"></div>
+            <a href="vues.accueil.php">Accueil</a>
+            <a href="#">Mon profil</a>
+            <a href="vues.contact.php">Contact</a>
+            <a href="vues.connexion.php">À propos</a>
+        </div>
     </header>
 </body>
 </html>
