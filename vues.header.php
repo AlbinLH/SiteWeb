@@ -20,7 +20,7 @@
             <a href="vues.accueil.php">Accueil</a>
             <a href="#">Mon profil</a>
             <a href="vues.contact.php">Contact</a>
-            <a href="vues.connexion.php">À propos</a>
+            <a class="propos" href="vues.connexion.php">À propos</a>
         </div>
     </header>
 </body>
