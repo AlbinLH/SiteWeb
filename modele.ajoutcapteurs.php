@@ -11,7 +11,7 @@ catch(Exception $e)
     die('Erreur : '.$e->getMessage());
 }
 $req_id_piece = $bdd->prepare('SELECT Id_piece FROM piece WHERE Nom = ?');
-$req_id_piece->execute(array( $piece));
+$req_id_piece->execute(array($piece));
 while ($result = $req_id_piece->fetch())
 {
     $IDpiece = $result['Id_piece'];

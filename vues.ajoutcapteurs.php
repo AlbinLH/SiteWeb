@@ -12,6 +12,12 @@ session_start();
 
 </head>
 <body>
+<script type='text/javascript'>
+function confirmation() {
+	var r = confirm("Etes-vous sûr de vouloir supprimer ce capteur ?");
+	return r;
+}
+</script>
 <?php 
 include('vues.header.php');
 try
@@ -25,8 +31,8 @@ catch(Exception $e)
 }
 
 $reponse = $bdd->prepare("SELECT Nom FROM piece WHERE Id_logement = ? "); //Prends les noms des pièces associée à l'utilisateur.
-$reponse->execute(array($_SESSION['idlogement']));
-$reponse->closeCursor();
+$reponse->execute(array( $_SESSION['idlogement']));
+
 ?>
 <form method="post" action="modele.ajoutcapteurs.php">
 
@@ -35,9 +41,9 @@ $reponse->closeCursor();
 while ($donnees = $reponse->fetch())
 {
     $piece = $donnees['Nom'];
-    echo "<option value='$piece'>$piece</option>";
-    echo $piece;
+    echo "<option value='$piece'>$piece</option>"; //affichage des différentes pièces.
 }
+$reponse->closeCursor();
 		?>
 		</select>
 		
@@ -84,6 +90,41 @@ while ($donnees = $reponse->fetch())
 		</div>
 		</fieldset>
 				
-	</form>
+		</form>
+		
+		
+		
+		<p>Choisir le capteur à supprimer de la pièce</p>
+		<?php 
+	    $reponse2 = $bdd->prepare("SELECT Id_piece,Nom FROM piece WHERE Id_logement = ? "); //Prends les noms des pièces associée à l'utilisateur.
+	    $reponse2->execute(array( $_SESSION['idlogement']));
+
+	    ?>
+		<form method="get" action="modele.supprimcapteurs.php" onsubmit="return confirmation()">
+			<select name="capteurselectionné">
+		<?php 
+        while ($donnees = $reponse2->fetch())
+        {
+            $piece = $donnees['Nom'];
+            $idpiece= $donnees['Id_piece'];
+            
+            $capteur = $bdd->prepare("SELECT Nom FROM capteur WHERE Id_piece = ? "); //Prends les noms des pièces associée à l'utilisateur.
+            $capteur->execute(array($idpiece));
+            while ($donnees2 = $capteur->fetch()) {
+                $nomcapteur = $donnees2['Nom'];
+                echo "<option value='$idpiece.'.'. $nomcapteur'>$piece : $nomcapteur</option>"; //affichage des différentes pièces.
+           
+            }
+        }
+        $reponse2->closeCursor();
+        $capteur->closeCursor();
+		?>
+			</select>
+			<div id="conteneur8">
+		     	<input type="submit" value="Valider" />
+			</div>
+		</form>
+		
+		
 	</body>
 				
