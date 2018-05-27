@@ -13,15 +13,37 @@
 </head>
 <body>
 
-    <header>
-        <h1><?php echo $title; ?></h1>
-        <div class="menu">
-            <div class="logo"><img src=LOGO.png alt="logo"></div>
-            <a href="vues.accueil.php">Accueil</a>
-            <a href="#">Mon profil</a>
-            <a href="vues.contact.php">Contact</a>
-            <a class="propos" href="vues.connexion.php">À propos</a>
+    <div class="topbar" id="navbar">
+    <div class="logo"><img src=LOGO.png alt="logo"></div>
+    <a href="#home">Accueil</a>
+    <a href="#news">News</a>
+    <div class="profil">
+        <button class="profilbtn">Mon profil</button>
+        <div class="profil-content">
+            <a href="#">Suivi conso</a>
+            <a href="#">Statistiques</a>
+            <a href="#">Reglages</a>
+            <a href="#">Deconnexion</a>
         </div>
-    </header>
+    </div> 
+    <a href="#contact">Contact</a>
+    <a href="#propos">A propos</a> 
+    </div>
+    
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    </script>
+    
 </body>
 </html>
