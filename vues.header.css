@@ -76,12 +76,27 @@ body {margin: 0;}
 
 .profil:hover .profil-content {display: block;}
 
-.flag-icon-fr {background-image:url(fr.svg)}
-.flag-icon-gb {background-image:url(gb.svg)}
-
 .langues {
-    display: inline-flex;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: auto;
+}
+
+.icon-fr img{
+    height: 10px;
+    width: auto;
+}
+.icon-gb img{
+    height: 10px;
+    width: auto;
+}
+
+.langues a {
+    height: 25px;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 0;
 }
 
 .sticky {
