@@ -28,6 +28,10 @@
     </div> 
     <a href="#contact">Contact</a>
     <a href="#propos">A propos</a> 
+    <div class="langues"> 
+        <a class="icon-fr" href="#"><img src="fr.svg" alt="icon-fr"></a>
+        <a class="icon-gb" href="#"><img src="gb.svg" alt="icon-gb"></a>
+    </div>
     </div>
     
     <script>
