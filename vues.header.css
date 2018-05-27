@@ -90,6 +90,6 @@ body {margin: 0;}
   
 }
 
-.sticky + .main {
+.sticky {
   padding-top: 60px;
 }
