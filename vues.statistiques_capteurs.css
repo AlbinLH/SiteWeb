@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+body
+{
+	font-family: Trebuchet MS;
+	background-image: url('images site APP/wall.jpg');
+}
+#style_du_h1
+{
+	text-align: center;
+	border: solid;
+	border-radius: 8px;
+	background-color: #3B4970;
+	color: black;
+}
+#taille_du_texte
+{
+	font-size: 2em;
+}
+select, input
+{
+	font-size: 1.2em;
+	border-radius: 8px;
+}
+p
+{
+	border: solid;
+	border-radius: 8px;
+	background-color: #3B4970;
+}

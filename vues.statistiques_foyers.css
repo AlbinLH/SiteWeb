@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+body
+{
+	font-family: Trebuchet MS;
+	background-image: url('images site APP/wall.jpg');
+}
+h1
+{
+	text-align: center;
+	border: solid;
+	border-radius: 8px;
+	background-color: #3B4970;
+}
