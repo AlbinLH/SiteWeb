@@ -101,7 +101,7 @@ $reponse->closeCursor();
 
 	    ?>
 		<form method="get" action="modele.supprimcapteurs.php" onsubmit="return confirmation()">
-			<select name="capteurselectionné">
+			<select name="capteurselectionne">
 		<?php 
         while ($donnees = $reponse2->fetch())
         {
@@ -112,12 +112,13 @@ $reponse->closeCursor();
             $capteur->execute(array($idpiece));
             while ($donnees2 = $capteur->fetch()) {
                 $nomcapteur = $donnees2['Nom'];
-                echo "<option value='$idpiece.'.'. $nomcapteur'>$piece : $nomcapteur</option>"; //affichage des différentes pièces.
+                echo "<option value='".$idpiece.".".$nomcapteur."'>$piece : $nomcapteur</option>"; //affichage des différentes pièces.
            
             }
+            $capteur->closeCursor();
         }
         $reponse2->closeCursor();
-        $capteur->closeCursor();
+        
 		?>
 			</select>
 			<div id="conteneur8">
