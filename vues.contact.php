@@ -9,16 +9,19 @@
  	<body>
  		<?php include("vues.header.php");?>
      	<div class="conteneur">
-     		<div class="element">
+     		<div class="element1">
      			<p> Un problème ? Envoyez un message à nos administrateurs ! </p>
      		</div>
-     		<div class="element">
-     			<form method="post" action="traitement.php"> <!-- ATTENTION à traitement.php  -->  
+     		
+     		<form method="post" action="modele.contact.php"> <!-- ATTENTION à traitement.php  -->
+     		    <div class="element2">
      				<textarea name="ameliorer" id="ameliorer" placeholder="Saisir votre message" rows="15" cols="50"></textarea>
-     			</form>
-            <input type="submit" value="Envoyer" class="bouton_envoyer"/>
-     		</div>
-            <div class="element">
+     				<p class="bouton"> <input type="submit" value="Envoyer" class="bouton_envoyer"/> </p>
+     			</div>
+     			
+            </form>
+
+            <div>
                 <p class="contact">Ou contactez-nous : <br/> <br/>
                     Téléphone : 01 49 54 52 00 <br/> <br/>
                     Adresse : 28 rue Notre-Dame des Champs <br/> <br/> 
@@ -26,5 +29,6 @@
                 </p>
             </div>    
      	</div>
+     	
 </body>
 </html>

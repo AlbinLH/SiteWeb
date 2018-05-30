@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+.foot {
+	margin-top: 15vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px gray solid;
+	
+}
+img {
+    width:auto;
+    height:46px;
+    margin-left: 50px;
+}
+.option_footer1 {
+	color: black;
+	margin-left: 70vh;
+	margin-right: 6vh;
+	
+}
+.option_footer
+{
+color: black;
+text-decoration: none;
+
+}
