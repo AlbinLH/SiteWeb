@@ -1,0 +1,143 @@
+body {font-family: Arial;}
+
+#global {
+    margin: 8% 8%;
+}
+
+.conteneur {
+	display:flex;
+	justify-content: space-around;
+    align-items: center;
+	width: 90%;
+    height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.box {
+    align-items: center;
+    display: flex;
+    border: solid;
+}
+.box a img {
+    height: 50px;
+    width: auto;
+}
+
+.icon {
+    background-color: dodgerblue;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.txt {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 48px 20px;
+    color: black;
+    float: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+	background-color: #0861BA;
+	color: white;
+	border: solid black;
+	padding-top: 20px;
+	padding-bottom:20px;
+	box-shadow:1px 10px 40px #999;
+	font-size: 1em;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.conteneur_2 {
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+form {
+    padding: 15px 15px;
+    border: solid black;
+    background-color: dodgerblue;
+}
+
+.search {
+    margin-top: 30px;
+    padding: 15px 15px;
+    border: solid black;
+    background-color: dodgerblue;
+}
+.search input {
+    font-size: 18px;
+}
+
+
+select {
+    margin-left: 20px;
+    height: 25px;
+    background-color: white;
+    font-family: sans-serif;
+    border: none;  
+    background: #fafafa url("angle-down.svg") no-repeat 90% 30%;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    font-size: 15px;
+}
+select:focus {
+    outline: none;
+}
+
+table{padding: 10px;}
+
+td{padding: 8px;}
+
+
+
+.boutons {
+	padding:6px 4px 6px 4px;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	/*width:100px;*/
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+}
+
+.boutons2 {
+	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:black;
+	border-radius:2px;
+	width:120px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+    
+   
+    
+}
+
+
+.recherche {
+	height: 25px;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+}
+
+.titre_user {margin-top: 100px;}
+
+.titre_pers {margin-bottom: 70px;}
+
+
+

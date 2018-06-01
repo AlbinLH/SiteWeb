@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color:lightblue;
+}
+
+.main{
+    margin: 5% 10%;
+    font-family: sans-serif;
+    
+}
+.main h1{text-align: center;}
+.main h2, p{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+#qui{
+    text-align: justify;
+}
+
+.resume{
+    padding-top: 3%;
+    flex-wrap: wrap;
+}
+
+#line_1{
+    display:flex;
+    justify-content: space-around;
+}
+
+#line_2{
+    display: flex;
+    justify-content: center;
+}
+#line_2 .bulle{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.bulle{
+    width: 200px;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+    
+}
+.bulle p{text-align: center;}
+
+.icon{width: 200px;}
+.icon img{
+    display: block;
+    width: 200px;   
+}
+
+
+
+
+
