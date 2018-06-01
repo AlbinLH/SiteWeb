@@ -1,0 +1,13 @@
+.App-logo {
+    animation: App-logo-spin infinite 10s alternate;
+    width: auto;
+    position: relative;
+    margin-left: 42%;
+    margin-right: 30%;
+    
+    
+}
+@keyframes App-logo-spin {
+  from { transform: rotateY(0deg);}
+  to { transform: rotateY(360deg);}
+}
