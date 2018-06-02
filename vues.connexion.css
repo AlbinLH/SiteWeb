@@ -6,14 +6,30 @@ body {
 h2 {
 	font-size: 28px;
 	color: black;
+    font-family: sans-serif;
 }
 p {
 	font-size: 22px;
-	font-color: black;
+	color: black;
+    font-family: sans-serif;
 }
 .blocktext {
 	text-align: center;
 }
+#App-logo {
+    animation: App-logo-spin linear infinite 10s;
+    width: auto;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+    
+}
+@keyframes App-logo-spin {
+  from { transform: rotateY(0deg);}
+  to { transform: rotateY(360deg);}
+}
+
 input {
 	width: 20%;
 	border: none;
@@ -21,7 +37,7 @@ input {
 	margin: 8px 0;
 	box-sizing: border-box;
 	border-radius: 20px;
-	text-size: 22px;
+	font-size: 22px;
 }
 button {
 	border-radius: 10px;
@@ -31,4 +47,9 @@ button {
 	text-decoration: none;
 	margin: 2px 1px;
 	cursor: pointer;	
+}
+
+#val{
+    font-family: sans-serif;
+    font-size: 16px;
 }
