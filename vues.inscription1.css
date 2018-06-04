@@ -1,12 +1,63 @@
-body
-{
+body {
 	background-image:url("login.jpg");
 	background-position: center center;
 	background-attachment: fixed;
 }
-h1 {
-	text-align: center;
+
+.global {
+    margin-top: 8%;
 }
+h1 {
+    text-align: center;
+    border: solid black;
+    margin: 2% 20%;
+    border-radius: 0px 0px 60px 60px;
+    background-color: rgba(8, 90, 160, 0.36);
+    font-family: Arial,sans-serif;
+    padding: 16px 16px;
+    color: white;
+    font-weight:500;
+}
+
+h2 {
+    border-radius: 0 40px 0 40px;
+    margin: 2% 30%;
+    background-color: rgba(8, 90, 160, 0.36);
+    font-family: Arial,sans-serif;
+    padding: 14px 16px;
+    text-align: center;
+    border: solid black;
+    color: white;
+    font-weight:500;
+}
+
+
+.conteneur {
+	margin: auto;
+	width: 40%;
+	border: none;
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: line;
+	justify-content: space-around;
+}
+
+td {
+	text-align: left;
+}
+
+#genre {
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 12px 20px;
+    width: 250px;
+    margin: 8px 0;
+    margin-bottom: 25px;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+
 .inputclassique {
 	width: 250px;
 	border: none;
@@ -14,34 +65,20 @@ h1 {
 	margin: 8px 0;
 	box-sizing: border-box;
 	border-radius: 20px;
-	text-size: 22px;
+	font-size: 16px;
 	margin-bottom: 25px;
+    font-family: Arial,sans-serif;
 }
-.conteneur {
-	margin: auto;
-	width: 40%;
-	border: none;
-	display: flex;
-	flex-direction: line;
-	justify-content: space-around;
-}
-td {
-	text-align: left;
-}
-.inputradio {
-	border-radius: 1px;
-	text-size: 22px;
-	border: none;
-}
-table {
-	background-color: white;
-	border-radius: 20px;
-	width: 240px;
-	margin-bottom: 25px;
-}
+.inputclassique placeholder{font-family: sans-serif;}
+
 .textinput {
-	color: grey;
+    color: grey;
 }
+#retour {
+    display: flex;
+    justify-content: space-around;
+}
+
 button {
 	border-radius: 10px;
 	border: none;
@@ -51,3 +88,10 @@ button {
 	margin: 2px 1px;
 	cursor: pointer;
 }
+
+#inscrire {
+    margin-top: 50px;
+    
+}
+
+
