@@ -30,6 +30,8 @@ p {
   to { transform: rotateY(360deg);}
 }
 
+#App-logo img{width: 35vh;}
+
 input {
 	width: 20%;
 	border: none;
