@@ -7,12 +7,13 @@
     </head>
 
  	<body>
- 		<h1>Gestion du compte .........</h1>
+ 	                      
+ 		<h1>Gestion du compte</h1>
  		 <table>
             <tr>
                 <td>Gestion des capteurs</td>
-                <td><input type="button" value="Ajouter" class="boutons2"></td>
-                <td><input type="button" value="Supprimer" class="boutons2"></td>
+                <td><a href="vues.ajoutcapteurs.php"><input type="button" value="Ajouter" class="boutons2"></a></td>
+                <td><a href="vues.ajoutcapteurs.php"><input type="button" value="Supprimer" class="boutons2"></a></td>
             </tr>
             <tr>
                 <td>Gestion des actionneurs</td>              
@@ -27,7 +28,7 @@
             </tr>
             <tr>
                 <td>Action d'urgence</td>
-                <td><input type="button" value="Obtenir donnée capteur" class="boutons2"></td>
+                <td><a href="vues.donnees_capteurs.php"><input type="button" value="Obtenir donnée capteur" class="boutons2"></a></td>
                 <td><input type="button" value="Déclencher actionneur" class="boutons2"></td>
             </tr>
              <tr>
