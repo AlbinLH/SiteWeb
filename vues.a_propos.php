@@ -11,7 +11,11 @@
     <div class="main">
     <h1><strong>À PROPOS</strong></h1><br />
     <h2><strong>QUI SOMMES-NOUS ?</strong></h2>
-    <p id="qui">blabl abalbalba lbalab labalba lablaba lbalb albalba lbbala bbalbal balb ablab lablabal balba lbalbal alblalbl ablba lbal balbab bbbbb bbbbb bbbbb bbbb bbbb bbbbbb blbal balba lbalbal balbalbalba lbalbalb albalba blbalabla blabalba lbalba</p>
+    <p id="qui">Nous sommes Larès, une jeune entreprise composée de 5 étudiants de l'Institut Supérieur d'Electronique de Paris. Nous proposons une expérience domotique couvrant l'ensemble des dimensions d'un tel projet, de l'installation du robot et des capteurs à domicile, à l'application de gestion à distance.</p>
+    <br>
+    <h2><strong>POURQUOI NOUS ?</strong></h2>
+    <p id="quo">Notre expertise est fondée sur des bases théoriques confirmées, ainsi que des expériences concrètes réussies. Nous mettons un point d'honneur à consulter régulièrement le client, en gérant chaque commande de manière agile, afin d'obtenir un résultat personnalisé qui est sûr de vous plaire. </p>
+    
     
     <div class="resume">
         <div id="line_1">
