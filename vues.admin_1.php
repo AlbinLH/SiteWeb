@@ -30,17 +30,26 @@
         </div>
         <h1 class="titre_user">ESPACE UTILISATEUR</h1><br /><br />
         <div class="conteneur_2">
-        <form method="post" action="traitement.php"> <!-- Attention à traitement -->
+        <form method="post" action="vues.admin2.php"> <!-- Attention à traitement -->
             <label for="pays"><strong>Veuillez choisir parmi la liste des utilisateurs gérés suivants : </strong></label>
-                <select name="pays" id="pays">
-                       <option value="france">France</option>
+                <select name="users" id="users">
+                      <!--  <option value="france">France</option>
                        <option value="espagne">Espagne</option>
                        <option value="italie">Italie</option>
                        <option value="royaume-uni">Royaume-Uni</option>
                        <option value="canada">Canada</option>
                        <option value="etats-unis">États-Unis</option>
                        <option value="chine">Chine</option>
-                       <option value="japon">Japon</option>
+                       <option value="japon">Japon</option>-->
+                       <?php 
+$bdd = new PDO('mysql:host=localhost;dbname=lares;charset=utf8', 'root', 'root');
+$reponse = $bdd->query('SELECT Nom, Prenom FROM personne');
+while ($donnees1 = $reponse->fetch()) {?>
+
+  <option value="<?php echo $donnees1["Nom"] ?>"><?php echo $donnees1['Nom'] . " " .$donnees1['Prenom']?>
+  </option>
+        <?php } ?>
+        <input type="submit"/>	
                 </select>
         </form>
         
