@@ -1,0 +1,42 @@
+.global{
+    margin: 15% 15%;
+    border: solid black;
+    background-color: dodgerblue;
+    padding: 14px 22px;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px; 
+    font-weight: 400;
+}
+
+.texte {
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.info {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 12px 16px;
+    font-family: Arial, sans-serif;
+    width: auto;
+    font-weight: 600;
+    background-color: rgb(68, 163, 255);
+}
+
+.bouton {
+    font-size: 12px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-left: px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    
+}
