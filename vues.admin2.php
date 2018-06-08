@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,8 +10,12 @@
     </head>
 
  	<body>
- 	                      
- 		<h1>Gestion du compte</h1>
+ 	     <?php 
+ 	     $liste=explode(',', $_POST['users']);
+ 	     for($i=0; $i<count($liste); $i++){
+ 	         echo "<h1> Gestion du compte de  $liste[$i]</h1>";
+ 	     }
+ 	         ?>          
  		 <table>
             <tr>
                 <td>Gestion des capteurs</td>
