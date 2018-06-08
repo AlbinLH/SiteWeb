@@ -46,7 +46,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=lares;charset=utf8', 'root', 'root')
 $reponse = $bdd->query('SELECT Nom, Prenom FROM personne');
 while ($donnees1 = $reponse->fetch()) {?>
 
-  <option value="<?php echo $donnees1["Nom"] ?>"><?php echo $donnees1['Nom'] . " " .$donnees1['Prenom']?>
+  <option value="<?php echo $donnees1["Nom"]. ' ' . $donnees1['Prenom'] ?>"><?php echo $donnees1['Nom'] . " " .$donnees1['Prenom']?>
   </option>
         <?php } ?>
         <input type="submit"/>	
