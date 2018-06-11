@@ -6,7 +6,7 @@ textarea
 	padding: 4vh;
 }
 
-.conteneur
+.page_contact
 {
 	display: flex;
 	flex-direction: column;
@@ -18,13 +18,13 @@ textarea
 	
 }
 
-.element1
+.contact_boxes
 {
 	text-align: center;
 	margin-bottom: 4vh;
 }
 
-.element2
+.inputs_mail
 {
 
     display: flex;
@@ -50,4 +50,18 @@ textarea
 {
 	text-align: center;
 }
+
+#objet{
+	border: 1px solid black;
+	border-radius: 6px;
+	height: 3vh;
+	width: 30vh;
+}
+#identifiant{
+	border: 1px solid black;
+	border-radius: 6px;
+	height: 3vh;
+	width: 30vh;
+}
+
 
