@@ -1,7 +1,7 @@
 <!DOCTYPE php>
 <html lang="fr">
 	<head>
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="vues.modif.css">
 		<title>Modification de vos données</title>
 	</head>
 <body>
