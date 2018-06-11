@@ -29,9 +29,7 @@ session_start();
             </tr>
             <tr>
                 <td>Messagerie</td>
-                <td><input type="button" value="Envoyer" class="boutons2"></td>
-                <td><input type="button" value="Lire" class="boutons2"></td>
-                <td><input type="button" value="Accès informations utilisateur" class="boutons2"></td>
+                <td><a href="vues.ajoutcapteurs.php"><input type="button" value="Accès messagerie" class="boutons2"></a></td>
             </tr>
             <tr>
                 <td>Action d'urgence</td>
