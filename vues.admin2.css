@@ -1,54 +1,159 @@
+#global {
+    margin: 2% 8%;
+    font-family: Arial, sans-serif;
+}
+
 table
 {
 	padding: 10px;
+    margin: auto;
+    border: solid black;
+    background-color: dodgerblue;
+    
 }
 
 td
 {
 	padding: 8px;
+    text-align: center;
 }
 
-h1
-{
-	text-align: center;
-}
-
-
-.boutons2
-{
-	padding:6px 0 6px 0;
-	font:bold 13px Arial;
-	width: 100%;
-	background:#f5f5f5;
-	color:#555;
-	border-radius:2px;
-	border:1px solid #ccc;
-	box-shadow:1px 1px 3px #999;
-	cursor: pointer;
-}
-
-h1
-{
-	font-family: Verdana;
-	background-color: #3B4970;
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+	background-color: rgba(8, 97, 186, 0.85);
 	color: white;
-	border: 1px solid black;
-	padding-top: 10px;
-	padding-bottom:10px;
+	border: solid black;
+	padding-top: 20px;
+	padding-bottom:20px;
 	box-shadow:1px 10px 40px #999;
-	font-size: 1em; 
+	font-size: 1em;
+    border-radius: 0px 0px 30px 30px;
 }
 
-body
-{
-	font-family: Arial;
+#block1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
 
-td
-{
-	text-align: center;
+.conteneur1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border: solid;
+    margin : 50px;
+    width: 350px;  
 }
-table
-{
-margin: auto;
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: dodgerblue;
 }
+
+.button1 {
+    background-color: dodgerblue;
+    border: solid black 1px; 
+    border-left: solid black 2px;
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+    
+}
+.button1:hover{background-color:#60b0ff;}
+
+.button1 img {
+    height: 30px;
+    width: auto;
+    padding: 0;  
+}
+
+.text {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 30px 0px;
+    font-weight: 600;
+    color: black;
+    float: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 35px;
+}
+
+#block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 30px;
+}
+
+.conteneur2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    margin : 50px;
+    width: 350px; 
+}
+
+.button2 {
+    background-color: dodgerblue;
+    border-top: solid black 2px;
+    border-bottom: dodgerblue;
+    border-right: dodgerblue;
+    border-left: dodgerblue;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.button2:hover{background-color:#60b0ff;}
+
+.option1 {
+    display: flex;
+    align-content: space-around;
+    background-color: dodgerblue;
+}
+.option1 img {
+    height: 30px;
+    width: auto;
+    padding: 0;
+}
+
+.button3 {
+    background-color: dodgerblue;
+    border-top: solid black 2px;
+    border-right: solid black 1px;
+    border-left: solid black 1px;
+    border-bottom: dodgerblue;
+    cursor: pointer;
+    height: 50px;
+    width: 176px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.button3:hover{background-color:#60b0ff;}
+
+.button4 {
+    background-color: dodgerblue;
+    border-top: solid black 2px;
+    border-right: solid black 1px;
+    border-left: solid black 1px;
+    border-bottom: dodgerblue;
+    cursor: pointer;
+    height: 50px;
+    width: 176px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.button4:hover{background-color:#60b0ff;}
+
+
+
+
+
